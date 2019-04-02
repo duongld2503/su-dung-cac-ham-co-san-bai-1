@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="add" value="">
+<button onclick="add()">add</button>
+<label id="chuoi"></label>
+<body>
+<script>
+    var array = new Array();
+    function add() {
+        let n = document.getElementById('add').value;
+        array.push(''+n);
+        document.getElementById('chuoi').innerHTML = array.join('');
+        document.getElementById('add').value = '';
+    }
+</script>
+</body>
+</html>
